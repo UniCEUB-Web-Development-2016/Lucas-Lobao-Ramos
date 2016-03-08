@@ -7,10 +7,9 @@
 
 <form action="Controller.php" method="post">
 	<input name="radius" type="text"/>
-	<input type="submit" value="Calcular"/>
 	<br><br><br><br>
-	<input name="Adj" type="text"/>
-	<input name="Op" type="text"/>
+	<input name="catetoAdj" type="text"/>
+	<input name="catetoOp" type="text"/>
 	<input type="submit" value="Calcular"/>
 
 </form>
