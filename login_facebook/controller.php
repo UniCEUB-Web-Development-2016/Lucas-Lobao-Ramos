@@ -1,13 +1,12 @@
 <?php
 
 include "newUser.php";
-new User = new newUser();
-$name = $_POST[];
-$email = $_POST[];
-$password = $_POST[];
-$birthDate = $_POST[];
+$user = new Usuario();
+$name = $_POST["n"];
+$email = $_POST["e"];
+$password = $_POST["p"];
+$birthDate = $_POST["b"];
 
-new User = new newUser();
 
 $user->setName($name);
 $user->setEmail($email);
