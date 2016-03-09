@@ -14,3 +14,5 @@ $user->setPassword($password);
 $user->setbirthDate($birthDate);
 
 $user->createTextArquive();
+
+echo "<h1>Usuário salvo com sucesso!</h1>";
