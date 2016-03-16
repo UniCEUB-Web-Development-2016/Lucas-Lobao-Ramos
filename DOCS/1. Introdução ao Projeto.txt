@@ -1,8 +1,20 @@
 Introdução
-
+----------
 Desde a revolução industrial, o consumo de recursos naturais pela sociedade vem aumentando inconsequentemente. E não é diferente nos dias de hoje, onde podemos perceber claramente problemas como super-saturação de veículos de transporte e emissão desenfreada de poluentes.
 O consumo inconsequente de recursos naturais pela sociedade vem gradativamente aumentando desde a revolução industrial. A necessidade cada vez maior de adquirir bens tem gerado mais e mais problemas, como por exemplo, super saturação de veículos de transporte e emissão desenfreada de componentes químicos prejudiciais.
 Estes problemas as vezes nos leva a perguntar: Visto que nosso transporte público é precário e preciso de uma alternativa eficiente, que opção além de usar meu carro eu tenho? 
 
 FeatureS 
+--------
 O FreeTravel tem como objetivo amenizar este problema de super saturação disponibilizando meios seguros para que os condutores de veículos possam oferecer a famosa carona. Antes de oferecer ou receber uma carona, os usuários devem ser previamente cadastrados. Alem disso, o freetravel contará com a localização geográfica do usuário para estabelecer rotas de viagem e fazer a ligação de passageiros e motorista mais próximos
+
+Tecnologias
+-----------
+PHP, html, css, javascript e google maps.
+Além disso, o FreeTravel também se utilizará de tecnologias como o Facebook, para cadastro de seus usuários, e o Uber, para os motoristas que desejam fazer um bom grado ao terminar suas corridas diárias.
+
+Diferencial
+-----------
+Apesar de aplicativos semelhantes no mercado, o FreeTravel trará segurança e conforto muito maiores do que o usual tanto para os motoristas como para os passageiros.
+Além disso, também contará com uma interface amigável para proporcionar um encontro mais eficiente entre Motoristas e Passageiros.
+
