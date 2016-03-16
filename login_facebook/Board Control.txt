@@ -1,4 +1,4 @@
-O que não consegui fazer
+O que nÃ£o consegui fazer
 ------------------------
-Não consegui consertar erro no arquivo Welcome.php no que se trata de referência feita ao control/ControlManager.php. O erro persiste mesmo após diversas tentativas de mudança no endereço. Funciona ao referenciar arquivo na mesma pasta.
-Devido a persistência na solução desse erro (necessário para prosseguir com o restante das atividades), não foi possível realizar as adaptações solicitadas.
+NÃ£o consegui consertar erro no arquivo Welcome.php no que se trata de referÃªncia feita ao control/ControlManager.php. O erro persiste mesmo apÃ³s diversas tentativas de mudanÃ§a no endereÃ§o. Funciona ao referenciar arquivo na mesma pasta.
+Devido a persistÃªncia na soluÃ§Ã£o desse erro (necessÃ¡rio para prosseguir com o restante das atividades), nÃ£o foi possÃ­vel realizar as adaptaÃ§Ãµes solicitadas (atÃ© o presente momento).
