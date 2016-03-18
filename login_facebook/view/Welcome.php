@@ -6,7 +6,7 @@
 <body>
 <center>
 
-<form action="/control/ControlManager.php" method="post"> 
+<form action="../login_facebook/control/ControlManager.php" method="post"> 
     <input type="text" name="n" placeholder="Nome" required>
 	<br>
 	<input type="text" name="e" placeholder="Email" required>

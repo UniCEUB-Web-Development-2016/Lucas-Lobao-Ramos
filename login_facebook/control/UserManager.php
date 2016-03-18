@@ -16,6 +16,6 @@ class UserManager{
 
 	public function newUser($name, $email, $pass, $date){
 		$user = new User($name, $email, $pass, $date);
-		$this->file->write("user.txt", $user->toString());
+		$this->file->write($user->getName().'.txt', $user->toString());
 	}
 }

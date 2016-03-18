@@ -2,7 +2,7 @@
 
 class FileManager{
 	public function write($filename, $text){
-		$file = fopen($fileName, 'w');
+		$file = fopen($filename, 'w');
 		fwrite($file, $text);
 		fclose($file);
 	}

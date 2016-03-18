@@ -47,7 +47,7 @@ class User{
 
 	public function toString()
 	{
-		//return $this->name.'/r/n'.$this->email.'/r/n'.$this->password.'/r/n'.$this->birthDate;
-		return $this->name.$this->email;
+		return $this->name.'\n\r'.$this->email.'\n\r'.$this->password.'\n\r'.$this->birthDate;
+		//return $this->name.$this->email;
 	}
 }
