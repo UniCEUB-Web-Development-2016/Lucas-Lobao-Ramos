@@ -7,7 +7,7 @@ class RequestController
 	public function executeRequest($request)
 	{
 		$uri = $request->get_uri();
-		echo $this->getResource($uri);
+		print_r($this->getResource($uri));
 	}
 
 	public function getResource($uri)
@@ -18,9 +18,8 @@ class RequestController
 		 foreach ($parameters as $value){		//Here foreach is used to separate each parameter by "=" element,
 		 	$b = explode('=',$value);			//they will be stored in a new array
 		 	$treatedParameters[$b[0]] = $b[1];	//now storing what is before "=" as a key and what is after as a value!
-		 }
-
-		 print_r($treatedParameters);  //Printing the values of treatedParameters array		 
+		 }		 
+		 return $treatedParameters;
 	}
 }
 /*
