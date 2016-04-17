@@ -1,6 +1,6 @@
 <?php
 
-include "model/Request.php";
+include_once "model/Request.php";
 
 class RequestController{
 
@@ -8,7 +8,8 @@ class RequestController{
 		$a = explode("/",$uri);
 		$b = explode("?",$a[3]);	//a[3] means the Resource+Parameters
 		
-		new Request(
+		
+		return new Request(
 				$protocol,
 				$method,
 				$b[0],	//Resource

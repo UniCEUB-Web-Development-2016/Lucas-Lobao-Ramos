@@ -1,6 +1,6 @@
 <?php
 
-include "util/RequestRouter.php";
+include_once "util/RequestRouter.php";
 	
 
-   (new RequestRouter)->route();
+   echo (new RequestRouter)->route();
