@@ -15,16 +15,16 @@ class User{
 	private $carplate;    
 	
 	public function __construct($userId,$name,$lastName,$email,$cpf,$rg,$phoneNumber,$birthDate,$driver,$carplate){
-		$this->userId = $userId;
-		$this->name = $name;
-		$this->lastName = $lastName;
-		$this->email = $email;
-		$this->cpf = $cpf;
-		$this->rg = $rg;
-		$this->phoneNumber = $phoneNumber;
-		$this->birthDate = $birthDate;
-		$this->driver = $driver;
-		$this->carplate = $carplate;
+		$this->userId 		= $userId;
+		$this->name 		= $name;
+		$this->lastName 	= $lastName;
+		$this->email 		= $email;
+		$this->cpf 			= $cpf;
+		$this->rg 			= $rg;
+		$this->phoneNumber 	= $phoneNumber;
+		$this->birthDate 	= $birthDate;
+		$this->driver 		= $driver;
+		$this->carplate 	= $carplate;
 	}
 
 	public function getUserId(){

@@ -15,6 +15,6 @@ class ResourceController{
 
 	public function createResource($request){
 
-		echo "OLHA O RESOURCE MLK!! -> ".$request->getResource();
+		new $this->ResourceMap[$request->getResource()]($request);
 	}
 }

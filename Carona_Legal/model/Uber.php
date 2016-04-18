@@ -13,16 +13,16 @@ class Uber{
 
 	public function __construct($sLatitude, $sLongitude,$dLatitude,$dLongitude,$time,$sRange,$dRange,$carpoolId,$emptySeats,$price){
 
-		$this->sLatitude = $sLatitude;
-		$this->sLongitude = $sLongitude;
-		$this->dLatitude = $dLatitude;
-		$this->dLongitude = $dLongitude;
-		$this->time = $time;
-		$this->sRange = $sRange;
-		$this->dRange = $dRange;
-		$this->carpoolId = $carpoolId;
-		$this->emptySeats = $emptySeats;
-		$this->price = $price;
+		$this->sLatitude 	= $sLatitude;
+		$this->sLongitude 	= $sLongitude;
+		$this->dLatitude 	= $dLatitude;
+		$this->dLongitude 	= $dLongitude;
+		$this->time 		= $time;
+		$this->sRange 		= $sRange;
+		$this->dRange 		= $dRange;
+		$this->carpoolId 	= $carpoolId;
+		$this->emptySeats 	= $emptySeats;
+		$this->price 		= $price;
 
 	}
 

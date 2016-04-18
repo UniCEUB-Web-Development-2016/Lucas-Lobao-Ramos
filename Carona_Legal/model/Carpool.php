@@ -13,15 +13,15 @@ class Carpool{
 
 	public function __construct($sLatitude, $sLongitude,$dLatitude,$dLongitude,$time,$sRange,$dRange,$carpoolId,$emptySeats){
 
-		$this->sLatitude = $sLatitude;
-		$this->sLongitude = $sLongitude;
-		$this->dLatitude = $dLatitude;
-		$this->dLongitude = $dLongitude;
-		$this->time = $time;
-		$this->sRange = $sRange;
-		$this->dRange = $dRange;
-		$this->carpoolId = $carpoolId;
-		$this->emptySeats = $emptySeats;
+		$this->sLatitude 	= $sLatitude;
+		$this->sLongitude 	= $sLongitude;
+		$this->dLatitude 	= $dLatitude;
+		$this->dLongitude 	= $dLongitude;
+		$this->time 		= $time;
+		$this->sRange 		= $sRange;
+		$this->dRange 		= $dRange;
+		$this->carpoolId 	= $carpoolId;
+		$this->emptySeats 	= $emptySeats;
 
 	}
 
