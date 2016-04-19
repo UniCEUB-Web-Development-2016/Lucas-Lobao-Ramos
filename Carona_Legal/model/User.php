@@ -2,7 +2,7 @@
 
 class User{
 
-	private $userId;      
+	     
 	private $name;        
 	private $lastName;    
 	private $email;       
@@ -27,6 +27,7 @@ class User{
 		$this->carplate 	= $carplate;
 	}
 
+	/*
 	public function getUserId(){
 		return $this->userId;
 	}
@@ -34,6 +35,7 @@ class User{
 	public function setUserId($userId){
 		$this->userId = $userId;
 	}
+	*/
 
 	public function getName(){
 		return $this->name;

@@ -17,4 +17,5 @@ class ResourceController{
 
 		new $this->ResourceMap[$request->getResource()]($request);
 	}
+
 }
