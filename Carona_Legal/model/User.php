@@ -14,8 +14,8 @@ class User{
 	private $driver;      
 	private $carplate;    
 	
-	public function __construct($userId,$name,$lastName,$email,$cpf,$rg,$phoneNumber,$birthDate,$driver,$carplate){
-		$this->userId 		= $userId;
+	public function __construct(/*$userId,*/$name,$lastName,$email,$cpf,$rg,$phoneNumber,$birthDate,$driver,$carplate){
+		//$this->userId 		= $userId;
 		$this->name 		= $name;
 		$this->lastName 	= $lastName;
 		$this->email 		= $email;
