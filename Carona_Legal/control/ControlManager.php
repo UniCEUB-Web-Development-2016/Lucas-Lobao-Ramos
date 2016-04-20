@@ -2,6 +2,7 @@
 
 include_once "RequestController.php";
 include_once "ResourceController.php";
+include_once "database/DBConnector.php";
 
 class ControlManager
 {
