@@ -12,7 +12,7 @@ class UserController{
 	}
 
 	//http://localhost/lucas-lobao-ramos/carona_legal/user?name=Cebola&lastName=Roxa&email=cebolinha@roxa.com&cpf=55555555555&rg=2222222&phoneNumber=6133021234&birthDate=01-01-1001&driver=N&carplate=nnnn1234
-	public function GET(){
+	public function POST(){
 		$p = $this->request->getParameters();
 		if(
 			array_key_exists("name",		$p) && 

@@ -9,7 +9,7 @@ class RequestRouter
 	public function route()
 	{
 		
-		//(new DBConnector)->getConnection();
-     	return (new ControlManager)->getResource();		
+     	(new ControlManager)->getResource();
+     	return (new ControlManager)->getDatabaseConnection();
 	}
 }

@@ -2,12 +2,13 @@
 
 include_once "RequestController.php";
 include_once "ResourceController.php";
-include_once "database/DBConnector.php";
+include_once "DatabaseController.php";
 
 class ControlManager
 {
 	private $resourceController;
 	private $requestController;
+	private $DBConnector;
 
 	public function __construct()
 	{
@@ -15,6 +16,7 @@ class ControlManager
 
 		$this->requestController = new RequestController();
 
+		$this->DBConnector = new DatabaseController();
 	}
 
 	public function getResource()
@@ -25,5 +27,11 @@ class ControlManager
 			    $_SERVER["REQUEST_URI"],
 			    $_SERVER["SERVER_ADDR"]);
 		return $this->resourceController->createResource($request);
-	}	
+	}
+
+	public function getDatabaseConnection(){
+		return $this->DBConnector;
+	}
+
+
 }
