@@ -45,7 +45,7 @@ class UserController{
 						$parameters["driver"],
 						$parameters["carplate"]
 						);
-		return var_dump($User);
+		return $User;
 		//echo new User($Request->getParameters());
 	}
 }

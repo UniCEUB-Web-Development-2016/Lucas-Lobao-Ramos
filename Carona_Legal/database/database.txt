@@ -3,4 +3,4 @@ name=coolcarpool
 type=mysql
 port=3306
 login=root
-pass=''
+pass=""
