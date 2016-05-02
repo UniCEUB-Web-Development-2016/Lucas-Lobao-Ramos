@@ -16,7 +16,7 @@ class ControlManager
 
 		$this->requestController = new RequestController();
 
-		$this->DBConnector = new DatabaseController();
+		$this->DB = new DatabaseController();
 	}
 
 	public function getResource()
@@ -26,11 +26,33 @@ class ControlManager
 			    $_SERVER["REQUEST_METHOD"],
 			    $_SERVER["REQUEST_URI"],
 			    $_SERVER["SERVER_ADDR"]);
-		return $this->resourceController->createResource($request);
+		$user = $this->routeMethod($request);
+		$this->DB->insertUser($user);
 	}
 
-	public function getDatabaseConnection(){
-		return $this->DBConnector;
+	public function routeMethod($request)
+	{
+		
+		switch($request->getMethod())
+		{
+			case "GET":
+			           break;
+			
+			case "POST":
+
+			   	return $this->resourceController->createResource($request);
+			   	break;
+
+			case "PUT":
+			 			break;
+
+			case "DELETE": 
+						break;
+
+			default:
+
+		           
+		}	
 	}
 
 
