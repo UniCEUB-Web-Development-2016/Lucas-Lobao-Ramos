@@ -15,7 +15,11 @@ class ResourceController{
 
 	public function createResource($request){
 
-		new $this->ResourceMap[$request->getResource()]($request);
+
+
+	return (new $this->ResourceMap[$request->getResource()]())->register($request);
+
+		//new $this->ResourceMap[$request->getResource()]($request);
 	}
 
 }
