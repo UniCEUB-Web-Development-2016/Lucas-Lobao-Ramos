@@ -28,28 +28,21 @@ class DatabaseController{
 	public function getConnection(){
 		return $this->cnn;
 	}
-	public function teste(){
-		return "OMG";
-	}
 
 	public function insertUser($obj){
 
-
-		//echo "$obj->getName()";
-		//$q = "INSERT INTO `tb_user`(`name`, `lastName`, `email`, `cpf`, `rg`, `phoneNumber`, `birthDate`, `driver`, `carplate`) VALUES ($obj->getName(),$obj->getLastName(),$obj->getEmail(),$obj->getCpf(),$obj->getRg,$obj()->getPhoneNumber(),$obj->getBirthDate(),$obj->getDiver(),'null');";
-		$q = "INSERT INTO tb_user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate) 
-			VALUES ('".$obj->getName()."','"
-					.$obj->getLastName()."','"
-					.$obj->getEmail()."','"
-					.$obj->getCpf()."','"
-					.$obj->getRg()."','"
-					.$obj->getPhoneNumber()."','"
-					.$obj->getBirthDate()."','"
-					.$obj->getDriver()."',
-					'null');";
-		var_dump($q);
-		$this->cnn->query($q);
 		
+		$q = "INSERT INTO tb_user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate) 
+			VALUES ('{$obj->getName()}',
+					'{$obj->getLastName()}',
+					'{$obj->getEmail()}',
+					'{$obj->getCpf()}',
+					'{$obj->getRg()}',
+					'{$obj->getPhoneNumber()}',
+					'{$obj->getBirthDate()}',
+					'{$obj->getDriver()}',
+					'null');";
+		$this->cnn->query($q);
 	}
 
 }
