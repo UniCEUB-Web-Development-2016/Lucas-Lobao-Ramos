@@ -1,4 +1,0 @@
-O que não consegui fazer
-------------------------
-Não consegui consertar erro no arquivo Welcome.php no que se trata de referência feita ao control/ControlManager.php. O erro persiste mesmo após diversas tentativas de mudança no endereço. Funciona ao referenciar arquivo na mesma pasta.
-Devido a persistência na solução desse erro (necessário para prosseguir com o restante das atividades), não foi possível realizar as adaptações solicitadas (até o presente momento).
