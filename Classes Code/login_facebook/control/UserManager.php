@@ -1,7 +1,7 @@
 <?php
 
-include "../model/User.php";
-include "../util/FileManager.php";
+include "model/User.php";
+include "util/FileManager.php";
 
 
 class UserManager{

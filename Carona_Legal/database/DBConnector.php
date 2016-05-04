@@ -10,7 +10,7 @@ class DBConnector{
 	private $pass;
 
 	public function __construct($ip,$name,$type,$port,$user,$pass){
-		$this->ip = $ip;
+		$this->IP = $ip;
 		$this->name = $name;
 		$this->type = $type;
 		$this->port = $port;

@@ -14,12 +14,7 @@ class Request{
 		$this->resource 		= $resource;
 		$this->parameters 		= $parameters;
 		$this->server_address 	= $server_address;
-	
-
 	}
-
-
-
 
 	public function getProtocol(){
 		return $this->protocol;
@@ -38,6 +33,6 @@ class Request{
 	}
 
 	public function getAddress(){
-		return $this->address;
+		return $this->server_address;
 	}	
 }

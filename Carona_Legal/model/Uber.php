@@ -10,6 +10,7 @@ class Uber{
 	private $dRange;
 	private $carpoolId;
 	private $emptySeats;
+	private $price;
 
 	public function __construct($sLatitude, $sLongitude,$dLatitude,$dLongitude,$time,$sRange,$dRange,$carpoolId,$emptySeats,$price){
 
@@ -99,7 +100,7 @@ class Uber{
 	}
 
 	public function getPrice(){
-		return $this->Price;
+		return $this->price;
 	}
 
 	public function setPrice($price){

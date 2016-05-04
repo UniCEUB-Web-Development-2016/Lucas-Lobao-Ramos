@@ -10,7 +10,7 @@ class RequestController
 		print_r($this->getResource($uri));
 	}
 
-	public function getResource($uri)
+	private function getResource($uri)
 	{
 	     $a = explode('?', $uri);				//Getting all parameters of URI
 		 $parameters = explode('&', $a[1]);		//Separating URI parameters by "&" element

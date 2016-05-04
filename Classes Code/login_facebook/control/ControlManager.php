@@ -1,7 +1,6 @@
 <?php
 
 include "UserManager.php";
-include "../"
 
 $name = $_POST["n"];
 $email = $_POST["e"];

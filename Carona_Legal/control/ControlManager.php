@@ -8,7 +8,7 @@ class ControlManager
 {
 	private $resourceController;
 	private $requestController;
-	private $DBConnector;
+	private $DB;
 
 	public function __construct()
 	{

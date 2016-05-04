@@ -22,7 +22,7 @@ class User{
 	}
 	*/
 
-	public function __construct($name, $email, $pass, $dta){  			//Mestre Caio, porque usar somente uma função em vez de vários métodos set's?
+	public function __construct($name, $email, $pass, $dta){
 		$this->name = $name;
 		$this->email = $email;
 		$this->password = $pass;
