@@ -22,10 +22,10 @@ class ControlManager
 	public function getResource()
 	{
 		$request = $this->requestController->createRequest(
-     		    $_SERVER["SERVER_PROTOCOL"],
-			    $_SERVER["REQUEST_METHOD"],
-			    $_SERVER["REQUEST_URI"],
-			    $_SERVER["SERVER_ADDR"]);
+	 			$_SERVER["SERVER_PROTOCOL"],
+				$_SERVER["REQUEST_METHOD"],
+				$_SERVER["REQUEST_URI"],
+				$_SERVER["SERVER_ADDR"]);
 		return $this->routeMethod($request);
 	}
 

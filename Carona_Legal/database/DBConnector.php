@@ -1,6 +1,6 @@
 <?php
 
-class DBConnector{
+class DBConnector {
 
 	private $IP;
 	private $name;
@@ -22,10 +22,10 @@ class DBConnector{
 
 		$dsn = $this->type.":dbname=".$this->name.";host=".$this->IP.";port=".$this->port;
 		try{
-    		$connection = new PDO($dsn, $this->user, $this->pass);
-    		return $connection;
+			$connection = new PDO($dsn, $this->user, $this->pass);
+			return $connection;
 		}catch (PDOException $e) {
-    							echo 'Connection failed: ' . $e->getMessage();
+								echo 'Connection failed: ' . $e->getMessage();
 		 }
 
 	}

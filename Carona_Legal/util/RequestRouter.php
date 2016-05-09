@@ -8,6 +8,6 @@ class RequestRouter
 	
 	public function route()
 	{		
-     	return (new ControlManager)->getResource();
+	 	return (new ControlManager)->getResource();
 	}
 }
