@@ -27,7 +27,6 @@ class UserController{
 						);
 
 		(new queryGenerator())->insert($User,$cnn);
-		//echo new User($Request->getParameters());
 	}
 
 	public function search($request,$cnn){

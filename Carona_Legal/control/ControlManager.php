@@ -36,11 +36,9 @@ class ControlManager
 		{
 			case "GET":
 				return $this->resourceController->searchResource($request,$this->DB);
-			           break;
 			
 			case "POST":
 			   	return $this->resourceController->createResource($request,$this->DB);
-			   	break;
 
 			case "PUT":
 			 			break;

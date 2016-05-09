@@ -9,13 +9,11 @@ class User{
 	private $cpf;         
 	private $rg;            
 	private $phoneNumber; 
-	private $birthDate;   
-
+	private $birthDate; 
 	private $driver;      
 	private $carplate;    
 	
-	public function __construct(/*$userId,*/$name,$lastName,$email,$cpf,$rg,$phoneNumber,$birthDate,$driver,$carplate){
-		//$this->userId 		= $userId;
+	public function __construct($name,$lastName,$email,$cpf,$rg,$phoneNumber,$birthDate,$driver,$carplate){
 		$this->name 		= $name;
 		$this->lastName 	= $lastName;
 		$this->email 		= $email;
@@ -26,16 +24,6 @@ class User{
 		$this->driver 		= $driver;
 		$this->carplate 	= $carplate;
 	}
-
-	/*
-	public function getUserId(){
-		return $this->userId;
-	}
-
-	public function setUserId($userId){
-		$this->userId = $userId;
-	}
-	*/
 
 	public function getName(){
 		return $this->name;
