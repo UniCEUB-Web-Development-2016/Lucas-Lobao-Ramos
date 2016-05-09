@@ -13,13 +13,11 @@ class ResourceController{
 		"uber"		=> "UberController"
 	];
 
-	public function createResource($request){
-
-
-
-	return (new $this->ResourceMap[$request->getResource()]())->register($request);
-
-		//new $this->ResourceMap[$request->getResource()]($request);
+	public function createResource($request,$cnn){
+		return (new $this->ResourceMap[$request->getResource()]())->register($request,$cnn);
 	}
 
+	public function searchResource($request,$cnn){
+		return (new $this->ResourceMap[$request->getResource()]())->search($request,$cnn);
+	}
 }
