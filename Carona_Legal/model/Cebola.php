@@ -1,9 +1,9 @@
 <?php
 
-class Cebola{
+class Cebola {
 	private $Cebola;
 
-	public function __construct($cebola){
+	public function __construct($cebola) {
 		$this->Cebola = $cebola; //Por enquanto não sei pra que vou usar isso, mas taí
 	}
 }
