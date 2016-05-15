@@ -30,7 +30,7 @@ class UserController {
 							$parameters["carplate"]
 							);
 
-			//(new queryGenerator())->insertUser($User,$cnn);
+			(new queryGenerator())->insertUser($User,$cnn);
 		}
 	}
 
