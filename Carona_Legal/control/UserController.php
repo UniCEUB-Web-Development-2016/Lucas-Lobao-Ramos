@@ -15,7 +15,8 @@ class UserController {
 
 		
 		$parameters = $request->getParameters();
-		if( $this->validateParameters($parameters) ){
+		try {
+			$this->validateParameters($parameters);
 			echo "incluido";
 			$User = new User(
 			
@@ -30,7 +31,9 @@ class UserController {
 							$parameters["carplate"]
 							);
 
-			(new queryGenerator())->insertUser($User,$cnn);
+			//(new queryGenerator())->insertUser($User,$cnn);
+		} catch (Exception $e){
+			return $e->getMessage();
 		}
 	}
 
@@ -40,16 +43,11 @@ class UserController {
 
 
 	private function validateParameters($parameters){
-			
-			$isValid = true;
 			foreach ($this->requiredParameters as $key) {
 				if(!$this->isIn($key,$parameters)){
-					$isValid = false;
-					echo "Missing parameters: ";
-					echo "$key";
+					throw new Exception("Error! Parameter '$key' is missing in your request!", 1);					
 				}
 			}
-			return $isValid;
 	}
 
 	private function isIn($prm,$array){
