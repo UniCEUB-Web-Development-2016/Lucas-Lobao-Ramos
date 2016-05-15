@@ -2,7 +2,7 @@
 
 class queryGenerator{
 	
-	public function insert($obj,$cnn){
+	public function insertUser($obj,$cnn){
 
 		$cnn->query("INSERT INTO user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate) 
 					VALUES(
