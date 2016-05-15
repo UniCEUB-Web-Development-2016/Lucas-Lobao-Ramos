@@ -11,9 +11,10 @@ class User{
 	private $phoneNumber; 
 	private $birthDate; 
 	private $driver;      
-	private $carplate;    
+	private $carplate;  
+	private $pass;  
 	
-	public function __construct($name,$lastName,$email,$cpf,$rg,$phoneNumber,$birthDate,$driver,$carplate){
+	public function __construct($name,$lastName,$email,$cpf,$rg,$phoneNumber,$birthDate,$driver,$carplate,$pass){
 		$this->name 		= $name;
 		$this->lastName 	= $lastName;
 		$this->email 		= $email;
@@ -23,6 +24,7 @@ class User{
 		$this->birthDate 	= $birthDate;
 		$this->driver 		= $driver;
 		$this->carplate 	= $carplate;
+		$this->pass 		= $pass;
 	}
 
 	public function getName(){
@@ -96,4 +98,9 @@ class User{
 	public function setCarplate($carplate){
 		$this->carplate = $carplate;
 	}
+
+	public function setPass($pass){
+		$this->pass = $pass;
+	}
+
 }
