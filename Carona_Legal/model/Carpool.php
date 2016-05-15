@@ -1,30 +1,43 @@
 <?php 
 
 class Carpool {
+	private $cpf;
 	private $sLatitude;
 	private $sLongitude;
 	private $dLatitude;
 	private $dLongitude;
+	private $date;
 	private $time;
 	private $sRange;
 	private $dRange;
 	private $carpoolId;
 	private $emptySeats;
 
-	public function __construct($sLatitude, $sLongitude, $dLatitude, $dLongitude, $time, $sRange, $dRange, $carpoolId, $emptySeats) {
+	public function __construct($cpf, $sLatitude, $sLongitude, $dLatitude, $dLongitude, $date, $time, $sRange, $dRange, $carpoolId, $emptySeats) {
 
+		$this->cpf 			= $cpf;
 		$this->sLatitude 	= $sLatitude;
 		$this->sLongitude 	= $sLongitude;
 		$this->dLatitude 	= $dLatitude;
 		$this->dLongitude 	= $dLongitude;
-		$this->time = $time;
+		$this->date			= $date;
+		$this->time 		= $time;
 		$this->sRange 		= $sRange;
 		$this->dRange 		= $dRange;
-		$this->carpoolId = $carpoolId;
-		$this->emptySeats = $emptySeats;
+		$this->carpoolId 	= $carpoolId;
+		$this->emptySeats 	= $emptySeats;
 
 	}
 
+
+	public function getCpf() {
+		return $this->cpf;
+	}
+
+	public function setCpf($cpf) {
+		$this->cpf = $cpf;
+	}
+	
 	public function getSLatitude() {
 		return $this->sLatitude;
 	}
@@ -55,6 +68,14 @@ class Carpool {
 
 	public function setDLongitude($dLongitude) {
 		$this->dLongitude = $dLongitude;
+	}
+
+	public function getDate() {
+		return $this->date;
+	}
+
+	public function setDate($date) {
+		$this->date = $date;
 	}
 
 	public function getTime() {

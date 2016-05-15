@@ -41,7 +41,7 @@ class ControlManager
 			   	return $this->resourceController->createResource($request,$this->DB);
 
 			case "PUT":
-			 			break;
+			 	return $this->resourceController->updateResource($request,$this->DB);
 
 			case "DELETE": 
 						break;
