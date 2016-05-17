@@ -22,14 +22,14 @@ class CarpoolController {
 		$parameters = $request->getParameters();
 		try {
 			(new validator())->validateParameters($parameters, $this->requiredParameters);
-			$Carpool = new User(
+			$Carpool = new Carpool(
 			
 							$parameters["cpf"],
 							$parameters["sLatitude"],
 							$parameters["sLongitude"],
 							$parameters["dLatitude"],
 							$parameters["dLongitude"],
-							$parameters["date"];
+							$parameters["date"],
 							$parameters["time"],
 							$parameters["sRange"],
 							$parameters["dRange"],
@@ -37,7 +37,7 @@ class CarpoolController {
 							$parameters["emptySeats"]
 							);
 
-			(new queryGenerator())->insertUser($User,$this->cnn);
+			(new queryGenerator())->insertCarpool($Carpool,$this->cnn);
 		} catch (Exception $e){
 			return $e->getMessage();
 		}

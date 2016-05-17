@@ -2,6 +2,25 @@
 
 class queryGenerator{
 	
+	public function insertCarpool($obj,$cnn){
+
+		$cnn->query("INSERT INTO carpool(cpf, sLatitude, sLongitude, dLatitude, dLongitude, datee, timee, sRange, dRange, carpoolId, emptySeats) 
+					VALUES(
+					'{$obj->getCpf()}',
+					'{$obj->getSLatitude()}',
+					'{$obj->getSLongitude()}',
+					'{$obj->getdLatitude()}',
+					'{$obj->getdLongitude()}',
+					'{$obj->getdate()}',
+					'{$obj->gettime()}',
+					'{$obj->getsRange()}',
+					'{$obj->getdRange()}',
+					'{$obj->getcarpoolId()}',
+					'{$obj->getemptySeats()}';"
+					);
+	}
+						
+
 	public function insertUser($obj,$cnn){
 
 		$cnn->query("INSERT INTO user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate) 
