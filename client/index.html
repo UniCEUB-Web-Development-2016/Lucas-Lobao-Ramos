@@ -50,8 +50,6 @@
         </ul>
         <ul class="main-nav">    
             <li><a class="link animated fadeInUp delay-2s" href="#service">Saiba mais e faça seu cadastro!</a></li>
-            <br>
-            <li><a class="link animated fadeInUp delay-1s" href="#contact">Já sou cadastrado!</a></li>
     	</ul>
     </div>
 </div>
@@ -171,30 +169,29 @@
 
 <section class="business-talking"><!--business-talking-start-->
 	<div class="container">
-        <h2>Entre agora mesmo!</h2>
+        <h2>Abra uma conta!</h2>
     </div>
 </section><!--business-talking-end-->
 <div class="container">
 <section class="main-section contact" id="contact">
-	
         <div class="container">
-            <h2 class="wow fadeInLeft delay-05s"><a href="#"><i class="fa-facebook-square"></i></a>Entrar usando facebook</h2>
-            <h2 class="wow fadeInLeft delay-05s"><a href="#"><i class="fa-linkedin-square"></i></a>Entrar usando linkedin</h2>          
+            <h2 class="wow fadeInLeft delay-05s"><a href="#"><i class="fa-facebook-square"></i></a>Entrar usando facebook</h2>        
         </div>
+        <div class="container" align="center">
         <form action="control/usercontrol.php" method="post">
-            <input type="text" name="name" placeholder="nome">
-            <input type="text" name="last" placeholder="sobrenome">
-            <input type="text" name="email" placeholder="email">
-            <input type="text" name="cpf" placeholder="cpf">
-            <input type="text" name="rg" placeholder="rg">
-            <input type="text" name="phoneNumber" placeholder="telefone">
-            <input type="text" name="birthDate" placeholder="data de nascimento">
-            <input type="text" name="driver" placeholder="motorista?">
-            <input type="text" name="carplate" placeholder="placa do carro">  
-            <input type="password" name="pass" placeholder="senha">
+            <input type="text" name="name" placeholder="nome" required> <br>
+            <input type="text" name="last" placeholder="sobrenome" required><br>
+            <input type="email" name="email" placeholder="email" required><br>
+            <input type="text" name="cpf" placeholder="cpf" required><br>
+            <input type="text" name="rg" placeholder="rg" required><br>
+            <input type="telephone" name="phoneNumber" placeholder="telefone" required><br>
+            <input type="date" name="birthDate" placeholder="data de nascimento" required><br>
+            <input type="text" name="driver" placeholder="Você é um motorista? Responda 's' ou 'n'" required><br>
+            <input type="text" name="carplate" placeholder="placa do carro" required><br>
+            <input type="password" name="pass" placeholder="senha" required><br>
             <input type="submit" name="enviar" value="Cadastrar!">
-
         </form>
+        </div>
 </section>
 </div>
 <footer class="footer">
