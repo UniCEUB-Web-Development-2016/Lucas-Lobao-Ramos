@@ -23,7 +23,7 @@ class queryGenerator{
 
 	public function insertUser($obj,$cnn){
 
-		$cnn->query("INSERT INTO user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate) 
+		$cnn->query("INSERT INTO user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate, pass) 
 					VALUES(
 					'{$obj->getName()}',
 					'{$obj->getLastName()}',
@@ -33,7 +33,8 @@ class queryGenerator{
 					'{$obj->getPhoneNumber()}',
 					'{$obj->getBirthDate()}',
 					'{$obj->getDriver()}',
-					'null');"
+					'null',
+					'{$obj->getPass()}');"
 					);
 	}
 

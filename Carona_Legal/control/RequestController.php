@@ -6,7 +6,7 @@ class RequestController {
 
 	public function createRequest($protocol, $method, $uri, $addr) {
 		$a = explode("/", $uri);
-		$b = explode("?", $a[3]);
+		$b = explode("?", $a[2]);
 		
 		
 		return new Request(

@@ -103,4 +103,9 @@ class User{
 		$this->pass = $pass;
 	}
 
+	public function getPass(){
+		return $this->pass;
+	}
+
+
 }
