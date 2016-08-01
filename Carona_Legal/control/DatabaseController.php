@@ -1,6 +1,6 @@
 <?php 
 
-include_once "database/DBConnector.php";
+// include_once "database/DBConnector.php";
 
 class DatabaseController{
 
@@ -13,7 +13,7 @@ class DatabaseController{
 	}
 
 	public function getDatabaseCredentials(){
-		$file=file("database/database.txt", FILE_IGNORE_NEW_LINES);
+		$file=file("model/database.txt", FILE_IGNORE_NEW_LINES);
 		$DBparam = array();
 		foreach ($file as $line){
 			$explode = explode("=",$line);

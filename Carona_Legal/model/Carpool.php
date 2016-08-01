@@ -8,12 +8,9 @@ class Carpool {
 	private $dLongitude;
 	private $date;
 	private $time;
-	private $sRange;
-	private $dRange;
-	private $carpoolId;
 	private $emptySeats;
 
-	public function __construct($cpf, $sLatitude, $sLongitude, $dLatitude, $dLongitude, $date, $time, $sRange, $dRange, $carpoolId, $emptySeats) {
+	public function __construct($cpf, $sLatitude, $sLongitude, $dLatitude, $dLongitude, $date, $time, $emptySeats) {
 
 		$this->cpf 			= $cpf;
 		$this->sLatitude 	= $sLatitude;
@@ -22,9 +19,6 @@ class Carpool {
 		$this->dLongitude 	= $dLongitude;
 		$this->date			= $date;
 		$this->time 		= $time;
-		$this->sRange 		= $sRange;
-		$this->dRange 		= $dRange;
-		$this->carpoolId 	= $carpoolId;
 		$this->emptySeats 	= $emptySeats;
 
 	}
@@ -84,30 +78,6 @@ class Carpool {
 
 	public function setTime($time) {
 		$this->time = $time;
-	}
-
-	public function getSRange() {
-		return $this->sRange;
-	}
-
-	public function setSRange($sRange) {
-		$this->sRange = $sRange;
-	}
-
-	public function getDRange() {
-		return $this->dRange;
-	}
-
-	public function setDRange($dRange) {
-		$this->dRange = $dRange;
-	}
-
-	public function getCarpoolId() {
-		return $this->carpoolId;
-	}
-
-	public function setCarpoolId($carpoolId) {
-		$this->carpoolId = $carpoolId;
 	}
 
 	public function getEmptySeats() {

@@ -1,8 +1,8 @@
 <?php
 
-include_once "RequestController.php";
-include_once "ResourceController.php";
-include_once "DatabaseController.php";
+// include_once "RequestController.php";
+// include_once "ResourceController.php";
+// include_once "DatabaseController.php";
 
 class ControlManager
 {
@@ -44,7 +44,8 @@ class ControlManager
 			 	return $this->resourceController->updateResource($request,$this->DB);
 
 			case "DELETE": 
-						break;
+				
+				break;
 
 			default:
 

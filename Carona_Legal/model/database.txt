@@ -1,0 +1,6 @@
+ip=127.0.0.1
+name=coolcarpool
+type=mysql
+port=3306
+login=root
+pass=""

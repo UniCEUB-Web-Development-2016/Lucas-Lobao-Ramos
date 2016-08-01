@@ -4,7 +4,7 @@ class queryGenerator{
 	
 	public function insertCarpool($obj,$cnn){
 
-		$cnn->query("INSERT INTO carpool(cpf, sLatitude, sLongitude, dLatitude, dLongitude, datee, timee, sRange, dRange, carpoolId, emptySeats) 
+		$result = $cnn->query("INSERT INTO carpool(cpf, sLatitude, sLongitude, dLatitude, dLongitude, datee, timee, emptySeats) 
 					VALUES(
 					'{$obj->getCpf()}',
 					'{$obj->getSLatitude()}',
@@ -13,17 +13,31 @@ class queryGenerator{
 					'{$obj->getdLongitude()}',
 					'{$obj->getdate()}',
 					'{$obj->gettime()}',
-					'{$obj->getsRange()}',
-					'{$obj->getdRange()}',
-					'{$obj->getcarpoolId()}',
-					'{$obj->getemptySeats()}';"
+					'{$obj->getemptySeats()}');"
 					);
+		if($result == null){
+			throw new Exception("Erro ao criar a carona! Favor tentar novamente!", 1);	
+		} else {
+			return true;
+		}
 	}
+
+	public function getCarpool($obj,$cnn){
+
+		$result = $cnn->query("SELECT * FROM carpool")->fetchAll(PDO::FETCH_ASSOC);
+		if($result == null){
+			throw new Exception("Erro ao criar a carona! Favor tentar novamente!", 1);	
+		} else {
+			return $result;
+		}
+	}
+
+	//public function login
 						
 
 	public function insertUser($obj,$cnn){
 
-		$cnn->query("INSERT INTO user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate, pass) 
+		$result = $cnn->query("INSERT INTO user(name, lastName, email, cpf, rg, phoneNumber, birthDate, driver, carplate, pass) 
 					VALUES(
 					'{$obj->getName()}',
 					'{$obj->getLastName()}',
@@ -36,6 +50,12 @@ class queryGenerator{
 					'null',
 					'{$obj->getPass()}');"
 					);
+
+		if($result == null){
+			throw new Exception("Erro ao inserir o usuário! Favor tentar novamente", 1);	
+		} else {
+			return true;
+		}
 	}
 
 	public function searchUser($request,$cnn){
